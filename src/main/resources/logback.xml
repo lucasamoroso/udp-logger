@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<configuration scan="true" scanPeriod="10 seconds">
+
+
+    <appender name="sync-console" class="ch.qos.logback.core.ConsoleAppender">
+        <withJansi>true</withJansi>
+        <filter class="ch.qos.logback.classic.filter.ThresholdFilter">
+            <level>DEBUG</level>
+        </filter>
+        <encoder>
+            <pattern>
+                %d %highlight(%-5p) %magenta([%t]) %cyan([%c]) - %m%n
+            </pattern>
+        </encoder>
+    </appender>
+
+    <appender name="console" class="ch.qos.logback.classic.AsyncAppender">
+        <appender-ref ref="sync-console"/>
+    </appender>
+
+    <root level="DEBUG">
+        <appender-ref ref="console"/>
+    </root>
+
+</configuration>

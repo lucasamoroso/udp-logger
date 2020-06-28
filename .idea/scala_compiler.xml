@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ScalaCompilerConfiguration">
+    <profile name="sbt 1" modules="udp-logger" />
+    <profile name="sbt 2" modules="udpLogger,zioExample">
+      <parameters>
+        <parameter value="-Yrangepos" />
+        <parameter value="-P:semanticdb:synthetics:on" />
+      </parameters>
+      <plugins>
+        <plugin path="$USER_HOME$/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/typelevel/kind-projector_2.13.2/0.11.0/kind-projector_2.13.2-0.11.0.jar" />
+        <plugin path="$USER_HOME$/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/io/tryp/splain_2.13.2/0.5.6/splain_2.13.2-0.5.6.jar" />
+        <plugin path="$USER_HOME$/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/com/olegpy/better-monadic-for_2.13/0.3.1/better-monadic-for_2.13-0.3.1.jar" />
+        <plugin path="$USER_HOME$/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/scalameta/semanticdb-scalac_2.13.2/4.3.14/semanticdb-scalac_2.13.2-4.3.14.jar" />
+      </plugins>
+    </profile>
+  </component>
+</project>
